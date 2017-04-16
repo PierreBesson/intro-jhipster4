@@ -4,10 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Introduction à JHipster 4</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/star.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +29,279 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background="#3E8ACC" data-transition="none" data-background-transition="none">
+					<div style="font-family:Pacifico;font-size:150%;">Introduction to JHipster 4</div>
+					<img src="img/wallpaper.png" style="border:none;box-shadow:none"/>
+					<hr class="star-light">
+					<img src="img/breizhcamp_logo.png" style="border:none;box-shadow:none;background-color:#3e8acc;"/>
+				</section>
+				<section data-background="#3E8ACC" data-transition="none" data-background-transition="none">
+					<div style="font-family:Pacifico;font-size:150%;">Greetings, Java Hipster!</div>
+					<img src="img/wallpaper.png" style="border:none;box-shadow:none"/>
+					<hr class="star-light">
+					<img src="img/breizhcamp_logo.png" style="border:none;box-shadow:none;background-color:#3e8acc;"/>
+				</section>
+                <section>
+					<h3>Who am I ?</h3>
+    				<div style="text-align: left;float:left">
+    					<img src="img/photo.jpeg" width="150"/>
+    					<h3>Pierre Besson</h3>
+    					<p><a href="http://twitter.com/pibesson"><i class="fa fa-twitter"></i>
+@pibesson</a></p>
+                        <p><a href="mailto:pbesson@ippon.fr">pbesson@ippon.fr</a></p>
+    				</div>
+    				<div style="text-align: right;float:right">
+						</ul>
+							<li>Java developper @Ippontech</li>
+							<li>JHipster core team member</li>
+						<ul>
+    				</div>
+				</section>
+                <section>
+					<img src="img/ippon.png" alt="" style="border:none;box-shadow:none" width="25%">
+					<ul>
+						<li>300 collaborators worldwide (France, USA, Australia)</li>
+						<li>4 cities in France : Paris, Nantes, Lyon, Bordeaux</li>
+						<li>Specialized in Java, Cloud, Big Data</li>
+					</ul>
+					<img src="img/ippon-rooftop.jpg" alt="" width="44%">
+					<img src="img/ippon-devoxx.jpg" alt="" width="51%">
+				</section>
+                <section>
+					<h3>The JHipster team</h3>
+					<a href="https://jhipster.github.io/team/">https://jhipster.github.io/team/</a>
+					<img src="img/jhipster-team.jpg" alt="" width="70%">
+				</section>
+				<section>
+				<section>
+					<div class="row">
+						<div>
+							<h2 class="heading">What is JHipster?</h2>
+							<hr class="star-primary">
+						</div>
+					</div>
+					<div class="row">
+					<span class="title text-center">
+						<div>
+							<a href="http://yeoman.io/" target="_blank"><img src="img/logo/logo-yeoman.png" class="project-icon img-responsive"></a> <i class="fa fa-2x">+</i>
+							<a href="http://projects.spring.io/spring-boot/" target="_blank"><img src="img/logo/logo-spring-boot.png" class="project-icon img-responsive"></a> <i class="fa fa-2x">+</i> <a href="https://angularjs.org/" target="_blank"><img src="img/logo/logo-angularjs.png" class="project-icon img-responsive"></a><i class="fa fa-2x">=</i> <a href="/"><img src="img/logo/logo-jhipster-small2x.png" class="project-icon img-responsive"></a>
+						</div>
+						<p class="lead">
+							JHipster is a
+							<a href="http://yeoman.io/" target="_blank">Yeoman generator</a>,
+							used to create a
+							<a href="http://projects.spring.io/spring-boot/" target="_blank">Spring Boot</a> + <a href="https://angular.io/" target="_blank">Angular</a>
+							full stack application. <br>
+						</p>
+						<p><i>100% open source project</i></p>
+					</span>
+				</div>
+				</section>
+				<section>
+					<div class="row">
+						<div>
+							<h2 class="heading">How to use JHipster?</h2>
+							<hr class="star-primary">
+						</div>
+					</div>
+					<small>
+					<p>1) Install JHipster</p>
+						<code>yarn global add generator-jhipster</code>
+					<p>2) Create a new directory and go into it</p>
+						<code>mkdir myApp &amp;&amp; cd myApp</code>
+					<p>3) Run JHipster and follow instructions on screen </p>
+						<code>yo jhipster</code>
+					</small>
+					</section>
+					<section>
+						<h3>JHipster goals</h3>
+						<ul>
+							<li>Provide <strong>scaffolding</strong> for a full stack application</li>
+							<li>Based on <strong>modern technologies</strong></li>
+							<li>Maximize development <strong>productivity</strong> with tooling</li>
+							<li><strong>Production ready</strong> (security), scalable architecture</li>
+						</ul>
+					</section>
+					<section data-background="#3E8ACC">
+						<div class="row no-margin;margin:0px">
+							<div>
+								<h2 class="heading">Client side options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/client.png" alt="" style="border:none;box-shadow:none;margin:0px">
+						<img src="img/client-1.png" alt="" style="border:none;box-shadow:none;margin:0px" width="50%">
+					</section>
+					<section data-background="#3E8ACC">
+						<div class="row no-margin">
+							<div>
+								<h2 class="heading">Server side options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/server.png" alt="" style="border:none;box-shadow:none;width:80%">
+					</section>
+					<section data-background="#3E8ACC">
+						<div class="row no-margin">
+							<div>
+								<h2 class="heading">Deployment options</h2>
+								<hr class="star-light">
+							</div>
+						</div>
+						<img src="img/deployment.png" alt="" style="border:none;box-shadow:none;width:80%">
+					</section>
+				</section>
+			<section>
+				<section>
+					<h1>About JHipster</h1>
+				</section>
+				<section>
+					<h3>JHipster downloads</h3>
+					<img src="https://img.shields.io/twitter/follow/java_hipster.svg?style=social&label=Followers" style="border:none">
+					<!--<script type='text/javascript' src='https://www.openhub.net/p/generator-jhipster/widgets/project_basic_stats?format=js'></script>-->
+					<img src="img/npmstat.svg" style="border:none">
+				</section>
+				<section>
+					<h3>Statistics</h3>
+					<img src="https://img.shields.io/github/stars/jhipster/generator-jhipster.svg?style=social&label=Stars" style="border:none">
+					<img src="https://img.shields.io/github/forks/jhipster/generator-jhipster.svg?style=social&label=Forks" style="border:none">
+					<img src="img/githubstats.png" style="border:none" width="85%">
+					<small>
+						<ul>
+							<li>500 000 website visits / month</li>
+							<li>10 000 git clones / month</li>
+							<li>320 contributors in total</li>
+						</ul>
+					</small>
+				</section>
+				<section>
+					<h3>Companies using JHipster</h3>
+					<a href="https://jhipster.github.io/companies-using-jhipster/">jhipster.github.io/companies-using-jhipster</a>
+					<iframe src="https://jhipster.github.io/companies-using-jhipster/" width="1000" height="400">
+					</iframe>
+				</section>
+			</section>
+			   <section>
+				   <section>
+					   <h1>What's new in JHipster 4</h1>
+				   </section>
+			   <section>
+					   <h3>What's new for the back-end</h3>
+					   <ul>
+						   <li>AAA Sonar Quality (<a href="https://sonarqube.com/dashboard?id=io.github.jhipster.sample%3Ajhipster-sample-application">analysis by Sonarsource</a>)</li>
+						   <li>JHipster library (utility classes)</li>
+						   <li>Improvements to caching configuration</li>
+						   <li>Constructor Injection</li>
+					   </ul>
+			   </section>
+				<section>
+					   <h3>Spring dependency injection style</h3>
+					    <b>Field injection (JHipster 3)</b>
+					   	<pre style="font-size:small"><code data-trim class="java">
+@RestController
+@RequestMapping("/api")
+public class UserResource {
+	@Inject
+    private UserRepository userRepository;
+
+	@Inject
+    private final UserService userService;
+}
+
+</code></pre>
+					    <b>Constructor injection (JHipster 4)</b>
+<div class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
+					   <pre style="font-size:small"><code data-trim class="java">
+@RestController
+@RequestMapping("/api")
+public class UserResource {
+    private final UserRepository userRepository;
+    private final UserService userService;
+
+    public UserResource(UserRepository userRepository, UserService userService) {
+        this.mailService = mailService;
+        this.userService = userService;
+}
+</code></pre>
+</div>
+<div class="fragment fade-out" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
+					   <pre style="font-size:small"><code data-trim class="java">
+@RestController
+@RequestMapping("/api")
+public class UserResource {
+    private final UserRepository userRepository;
+    private final UserService userService;
+
+	@Inject
+    public UserResource(UserRepository userRepository, UserService userService) {
+        this.mailService = mailService;
+        this.userService = userService;
+}
+</code></pre>
+<small><a href="http://olivergierke.de/2013/11/why-field-injection-is-evil/"><i class="fa fa-link"></i> Oliver Gierke: Why field injection is evil</a></small>
+</div>
+
+				   </section>
+				   <section>
+					   <h3>Cache improvements</h3>
+					   <p>
+						<ul>
+							<li>Hibernate 2nd level cache (now using Hibernate 5)</li>
+							<li>Spring caching abstraction configured by default</li>
+							<li>Improved Ehcache configuration</li>
+							<li>Improved Hazelcast configuration</li>
+						</ul>
+						</p>
+						<p>
+							<ul>
+								<li><a href="https://jhipster.github.io/using-cache/"><i class="fa fa-book"></i> jhipster.github.io/using-cache/</a></li>
+								<li><a href="https://spring.io/guides/gs/caching/"><i class="fa fa-book"></i> Spring caching guide</a></li>	
+								<li><a href="https://github.com/ehcache/ehcache3-samples"><i class="fa fa-github"></i> Official ehcache 3 samples</a></li>
+							</ul>
+						</p>
+				   </section>
+				   <section>
+					   <h3>What's new for the front-end</h3>
+					   <p>
+						<ul>
+							<li>Angular <s>2</s> 4</li>
+							<li>Typescript</li>
+							<li>Webpack</li>
+							<li>Bootstrap 4 alpha</li>
+							<li>Feature parity with AngularJS</li>
+							<li>Performance improvements</li>
+						</ul>
+					   </p>
+				   </section>
+			   </section>
+			   <section>
+				   <section>
+				   	  <title>Demo</title>
+				   </section>
+				   <section>
+				   	  <h3>Entity generation</h3>
+						 With questions from the entity sub-generator : repetitive, not fun
+						 With UML
+				   </section>
+			   </section>
+				<section>
+					<section>
+						Other stuff
+					</section>
+					<section>
+						<h4>Yo Variability!<br>
+							JHipster: A Playground for Web-Apps Analyses</h4>
+						<small>
+							<a href="https://hal-centralesupelec.archives-ouvertes.fr/hal-01468084"><i class="fa fa-file-pdf-o"></i></i> Article</a>
+							- <a href="https://docs.google.com/presentation/d/1574Y1wnw07aOXiuR2xGuureC5WNYfHnr_4UD1IPYOH8/edit?usp=sharing"><i class="fa fa-slideshare"></i> Presentation</a><br>
+						Scientific Article about JHipster from INRIA Rennes<br>
+						<i>Mathieu Acher and others</i></small>
+						<img src="img/jhipster-variants.png">
+						<small><b>Generate applications with almost all possible configurations<br>(26 000 tested out of 163 000)</b><br>
+						</small>
+					</section>
+
+				</section>
 			</div>
 		</div>
 
